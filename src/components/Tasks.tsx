@@ -47,8 +47,8 @@ function Tasks(props: TaskProps) {
         <div className="completed-tasks">
             <h3>Tarefas Concluídas</h3>
             <div className="tasks-list">
-            {tasks.filter((task) => task.isCompleted === true).map((lastTask) => ( 
-            <TaskItem key={lastTask.id} task={lastTask} />))}
+            {tasks.filter((task) => task.isCompleted === true).map((completedTask) => ( 
+            <TaskItem key={completedTask.id} task={completedTask} />))}
             </div>
         </div>
       </div>
